@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_import": 1,
+ "autoname": "format:Sal Slip/{employee}/{#####}",
  "creation": "2013-01-10 16:34:15",
  "doctype": "DocType",
  "document_type": "Setup",
@@ -774,10 +775,15 @@
  "idx": 9,
  "is_submittable": 1,
  "links": [],
+<<<<<<< HEAD
  "modified": "2024-06-11 10:00:16.606996",
+=======
+ "modified": "2025-07-13 17:58:15.095251",
+>>>>>>> 5e055bb3 (chore: avoid setting salary slip naming series via class method)
  "modified_by": "Administrator",
  "module": "Payroll",
  "name": "Salary Slip",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -810,6 +816,7 @@
    "role": "Employee"
   }
  ],
+ "row_format": "Dynamic",
  "search_fields": "employee_name",
  "show_name_in_global_search": 1,
  "sort_field": "modified",
