@@ -775,11 +775,7 @@
  "idx": 9,
  "is_submittable": 1,
  "links": [],
-<<<<<<< HEAD
- "modified": "2024-06-11 10:00:16.606996",
-=======
  "modified": "2025-07-13 17:58:15.095251",
->>>>>>> 5e055bb3 (chore: avoid setting salary slip naming series via class method)
  "modified_by": "Administrator",
  "module": "Payroll",
  "name": "Salary Slip",
