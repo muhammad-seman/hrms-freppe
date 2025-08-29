@@ -59,6 +59,7 @@ from hrms.payroll.utils import sanitize_expression
 class SalarySlip(TransactionBase):
 	def __init__(self, *args, **kwargs):
 		super().__init__(*args, **kwargs)
+		self.series = f"Sal Slip/{self.employee}/.#####"
 		self.whitelisted_globals = {
 			"int": int,
 			"float": float,
@@ -72,6 +73,9 @@ class SalarySlip(TransactionBase):
 			"ceil": ceil,
 			"floor": floor,
 		}
+
+	def autoname(self):
+		self.name = make_autoname(self.series)
 
 	@property
 	def joining_date(self):
@@ -203,6 +207,11 @@ class SalarySlip(TransactionBase):
 		self.update_status()
 		self.update_payment_status_for_gratuity()
 		self.cancel_loan_repayment_entry()
+
+	def on_trash(self):
+		from frappe.model.naming import revert_series_if_last
+
+		revert_series_if_last(self.series, self.name)
 
 	def get_status(self):
 		if self.docstatus == 0:
