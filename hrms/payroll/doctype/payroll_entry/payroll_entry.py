@@ -703,8 +703,12 @@ class PayrollEntry(Document):
 		if account_currency not in currencies:
 			currencies.append(account_currency)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		
+=======
+
+>>>>>>> 4b5fcc63 (fix: linter issue)
 		if company_currency not in currencies:
 			currencies.append(company_currency)
 
