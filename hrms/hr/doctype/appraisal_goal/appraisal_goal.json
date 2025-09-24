@@ -116,6 +116,7 @@
    "unique": 0
   }, 
   {
+<<<<<<< HEAD
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -142,6 +143,16 @@
    "search_index": 0, 
    "set_only_once": 0, 
    "unique": 0, 
+=======
+   "fieldname": "score",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Score",
+   "no_copy": 1,
+   "oldfieldname": "score",
+   "oldfieldtype": "Select",
+   "print_width": "70px",
+>>>>>>> 48d9e1a6 (fix: use number of stars specified in options to calculate score)
    "width": "70px"
   }, 
   {
@@ -196,6 +207,7 @@
    "unique": 0, 
    "width": "70px"
   }
+<<<<<<< HEAD
  ], 
  "hide_heading": 0, 
  "hide_toolbar": 0, 
@@ -218,3 +230,20 @@
  "read_only_onload": 0, 
  "track_seen": 0
 }
+=======
+ ],
+ "idx": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-24 15:39:16.891078",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Appraisal Goal",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
+>>>>>>> 48d9e1a6 (fix: use number of stars specified in options to calculate score)
