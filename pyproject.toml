@@ -5,7 +5,6 @@ authors = [
 ]
 description = "Open Source HR & Payroll Software"
 requires-python = ">=3.10"
-readme = "README.md"
 dynamic = ["version"]
 
 [build-system]
@@ -70,4 +69,3 @@ Repository = "https://github.com/frappe/hrms.git"
 
 [tool.bench.frappe-dependencies]
 frappe = ">=16.0.0-dev,<17.0.0"
-erpnext = ">=16.0.0-dev,<17.0.0"
