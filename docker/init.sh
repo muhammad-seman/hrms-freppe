@@ -24,6 +24,7 @@ bench set-redis-socketio-host redis://redis:6379
 sed -i '/redis/d' ./Procfile
 sed -i '/watch/d' ./Procfile
 
+bench get-app erpnext
 bench get-app /workspace
 
 bench new-site hrms.localhost \
@@ -32,6 +33,7 @@ bench new-site hrms.localhost \
 --admin-password admin \
 --no-mariadb-socket
 
+bench --site hrms.localhost install-app erpnext
 bench --site hrms.localhost install-app hrms
 bench --site hrms.localhost set-config developer_mode 1
 bench --site hrms.localhost enable-scheduler
